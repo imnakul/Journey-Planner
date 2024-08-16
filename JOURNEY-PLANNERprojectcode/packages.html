@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title> Packages - Journey Planner </title>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+     <style>
+          *{
+            box-sizing: border-box;
+           }
+
+     	body {
+               background-image: linear-gradient(to right, rgb(34, 190, 242),white,rgb(231, 171, 58));
+               font-family: 'Montserrat', sans-serif;
+               padding:0px;
+               margin:0px;
+     	}
+          
+          .content{
+                  display:block;
+                  font-size:23px;
+                  margin-left:30px;
+          }
+          
+          li{
+               margin: 8px 0px 22px 10px;
+               color:black;
+          }
+
+          .row{
+               display:flex;
+               flex-direction:left;
+          }
+          .column1{
+               width:20%;
+               height:100%;
+               margin-top:10px;
+          }
+          .column2{
+               width:80%;
+               height:100%;
+          }
+
+          .first{
+               border-width: 0px 0px 3px 0px;
+               border-color:black;
+               border-style: solid; 
+          }
+
+          .first li{
+               display:inline;
+               font-size: 55px;
+              font-family: "Trirong", serif;
+              color:black;
+              margin:20px 480px 20px 30px;
+          }
+          
+          .first li:hover{
+               transition: color 0.5s;
+               background: -webkit-linear-gradient(green,darkgreen);
+               -webkit-background-clip: text;
+               -webkit-text-fill-color: transparent;
+          }
+
+          .marq{
+               padding:5px;
+               margin-bottom:5px;
+               margin-top:540px;
+          }
+
+          .dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  margin: 10px 0px 0px 0px; 
+  font-size: 25px;  
+  border: none;
+  outline: none;
+  background: -webkit-linear-gradient(blue,black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  padding: 14px 16px;
+  background-color: inherit;
+}
+
+ .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background: rgb(79, 180, 79);
+  padding: 16px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: inline;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.column a:hover {
+  background-color: slateblue;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+
+     </style>
+</head>
+<body>
+	  <div class="first">
+      <li><b>PACKAGES</b></li>  
+       </div>
+
+       <div class="dropdown">
+          <button class="dropbtn">Hover to Explore Packages...
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="header">
+              <h2>Place</h2>
+            </div>   
+            <div class="row">
+              <div class="column">
+                <a href="parisdoc.html">Paris</a>
+                <a href="newyorkdoc.html">New-York</a>
+                <a href="losanglesdoc.html">Los-Angeles</a>
+              </div>
+              <div class="column">
+                <a href="delhidoc.html">Delhi</a>
+                <a href="dubaidoc.html">Dubai</a>
+                <a href="bangkokdoc.html">Bangkok</a>
+              </div>
+              <div class="column">
+                <a href="kathmandudoc.html">Kathmandu</a>
+                <a href="jaipurdoc.html">Jaipur</a>
+                <a href="hongkongdoc.html">Hong-Kong</a>
+              </div>
+              <div class="column">
+               <a href="lasvegasdoc.html">Las-Vegas</a>
+               <a href="kolkatadoc.html">Kolkata</a>
+               <a href="mumbaidoc.html">Mumbai</a>
+             </div>
+            </div>
+          </div>
+        </div>
+
+     <!-- <div class="content">
+          <div class="row">
+           <div class="column1">    
+          <li><a href="parisdoc.html">Paris</a></li>
+          <li><a href="new.html">New-York</a></li>
+          <li><a href="new.html">Los-Angeles</a></li>
+          <li><a href="new.html">Las-Vegas</a></li>
+          <li><a href="new.html">Delhi</a></li>
+          <li><a href="new.html">Dubai</a></li>
+          <li><a href="new.html">Bangkok</a></li>
+          <li><a href="new.html">Kathmandu</a></li>
+          <li><a href="new.html">Jaipur</a></li>
+          <li><a href="new.html">Hong-Kong</a></li>
+          <li><a href="new.html">Kolkata</a></li>
+          <li><a href="new.html">Mumbai</a></li>
+             </div>
+           <div class="column2">
+                
+           </div>  
+          </div>
+     </div>     -->
+     <marquee class="marq" bgcolor="transparent" direction="right" 
+        behavior="alternate" 
+        style="border:Brown 2px SOLID">
+        Journey Planner: Plan Your Journey In Minimal Time
+    </marquee> 
+</body>           

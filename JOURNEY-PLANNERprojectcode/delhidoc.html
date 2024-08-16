@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Package Details</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+                 *{
+                   box-sizing: border-box;
+                  }
+
+                  body {
+                   background-image: linear-gradient(to right,rgb(38, 233, 129) ,rgb(8, 196, 243),rgb(232, 232, 159),rgb(38, 233, 129),rgb(8, 196, 243));
+                   font-family: 'Montserrat', sans-serif;
+                   padding:0px;
+                   margin:0px;
+     	               }
+                  
+                        .row1{
+               margin:0px;
+               padding:0px;
+            }
+
+            .main p{
+                font-family: "Trirong", serif;
+                font-size:60px;
+                padding:10px 0px 10px 20px;
+                border-width:0px 0px 1px 0px;
+                border-color:black;
+                border-style:solid;
+                margin: 0px 0px 35px 0px;
+                text-align:center;
+                color:orangered;
+            }
+    
+            table, th, td {
+                     border:1px solid orangered;
+                     width:500px;
+                     color:black;
+                     margin:0px 40px 35px 280px;
+                          }
+            .center{
+                margin-left:20px;
+
+            }                         
+            .marq{
+                padding:5px;
+            }   
+            .one{
+                padding:0px;
+                display:flex;
+                flex-direction:right;
+                margin-left:50px;
+            }
+            .two{
+                width:750px;
+            }
+            .three{
+                width:650px;
+            }
+            
+            ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 15px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ul li:nth-child(odd) {
+   background: #f9f9f9; 
+  
+}
+
+ul li:hover {
+  /* background: #ddd; */
+  background:lightseagreen;
+}
+
+ul li.checked {
+  background: #888;
+  color: #fff; 
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+/* Style the header */
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.header{
+    background-color:transparent;
+    width:auto;
+    padding:0px 10px 10px 10px;
+    text-align: center;
+    font-size:24px; 
+    margin-bottom:10px;
+    margin-top:0px;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input {
+  margin-left:31px;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 20%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+h2{
+    margin:5px;
+    padding:20px;
+}
+
+        </style>
+    </head>
+<body>
+    <div class="main">
+        <p><b>DELHI</b></p>
+       </div>
+       
+       <div class="one">
+       <div class="two">
+       <div class = "row1">
+       <table class="center">
+        <tr>
+          <th>PACKAGE TYPE</th>
+          <th>No OF DAYS</th>
+          <th>COST</th>
+          
+        </tr>
+        <tr>
+          <td><b>Economy</b></td>
+          <td>6 Days</td>
+          <td>10L</td>
+        </tr>
+        <tr>
+          <td><b>Premium Economy</b></td>
+          <td>10 Days</td>
+          <td>18L</td>
+        </tr>
+        <tr>
+            <td><b>Business</b></td>
+            <td>14 Days</td>
+            <td>30L</td>
+          </tr>
+      </table>
+    </div>
+    <p style="margin-left:10px;"><b>PLACES YOU MUST VISIT in DELHI :-</b></p>
+    <div class="item">
+      <ul>Akshardham</ul>
+      <ul>Red Fort	Chandni Chowk</ul>
+      <ul>India Gate	Central Secretariat</ul>
+      <ul>Hauz Khas	Hauz Khas</ul>
+      <ul>Rajiv Chowk</ul>
+      <ul>Qutub Minar</ul>
+      <ul>Kalkaji Mandir</ul>
+      <ul>Dhaula Kuan</ul>
+      <ul>Jama Masjid</ul>
+      
+    </div> 
+</div>
+<div class="three">
+    <div id="myDIV" class="header">
+        <h2>Itinerary</h2>
+        <input type="text" id="myInput" placeholder="Write...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      
+      <ul id="myUL">
+        <li>Visit Disneyland</li>
+        <li>Visit Eiffel Tower</li>
+        <li>Travel in Cable Car</li>
+        <li>Shopping</li>
+        <li>Ferry Ride</li>
+        <li>Bungy Jumping</li>
+      </ul>
+      
+      <script>
+      // Create a "close" button and append it to each list item
+      var myNodelist = document.getElementsByTagName("LI");
+      var i;
+      for (i = 0; i < myNodelist.length; i++) {
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        myNodelist[i].appendChild(span);
+      }
+      
+      // Click on a close button to hide the current list item
+      var close = document.getElementsByClassName("close");
+      var i;
+      for (i = 0; i < close.length; i++) {
+        close[i].onclick = function() {
+          var div = this.parentElement;
+          div.style.display = "none";
+        }
+      }
+      
+      // Add a "checked" symbol when clicking on a list item
+      var list = document.querySelector('ul');
+      list.addEventListener('click', function(ev) {
+        if (ev.target.tagName === 'LI') {
+          ev.target.classList.toggle('checked');
+        }
+      }, false);
+      
+      // Create a new list item when clicking on the "Add" button
+      function newElement() {
+        var li = document.createElement("li");
+        var inputValue = document.getElementById("myInput").value;
+        var t = document.createTextNode(inputValue);
+        li.appendChild(t);
+        if (inputValue === '') {
+          alert("You must write something!");
+        } else {
+          document.getElementById("myUL").appendChild(li);
+        }
+        document.getElementById("myInput").value = "";
+      
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        li.appendChild(span);
+      
+        for (i = 0; i < close.length; i++) {
+          close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+          }
+        }
+      }
+      </script>
+</div>
+</div>
+        <marquee class="marq" bgcolor="transparent" direction="right" 
+        behavior="alternate" 
+        style="border:Black 2px SOLID">
+        Journey Planner: Plan Your Journey In Minimal Time
+    </marquee>      
+</body>            

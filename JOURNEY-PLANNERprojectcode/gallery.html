@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Gallery - Journey Planner </title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<style>  
+
+body{
+  /* background-image: linear-gradient(to right,orange, white,#8cbaff); */
+  background-image: linear-gradient(to right ,#8cbaff, white,orange);
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 340px auto auto auto;
+  background-image: linear-gradient(to right ,#8cbaff, white,orange);
+  /* padding: 40px;  */
+  padding-top:10px;
+  padding-right:40px;
+  padding-left:40px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 0px 0px 0px 0px;
+  /* font-size:100px; */
+}
+
+h1{
+  	margin-top:20px;
+    font-family: "Audiowide", sans-serif;
+    font-size: 70px;
+    border:1px solid black;
+    padding:10px;
+    text-align:center;
+    margin-bottom:20px;
+    margin-right:10px;
+    margin-left:10px;
+    /* background-image: linear-gradient(to right ,orange, white,#8cbaff); */
+    background-image: linear-gradient(to right ,#8cbaff, white,orange);
+   }
+
+h1:hover{
+    cursor: pointer;
+    /* background-image: linear-gradient(to right, orange,white);
+    transition: color 0.5s; */
+    background: -webkit-linear-gradient(blue,cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;     
+     } 
+
+p{
+  text-align:center;
+  padding-top: 0px;
+  padding-bottom:0px;
+}
+
+p:hover{
+  background: -webkit-linear-gradient(blue,cyan);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Gallery</h1>
+<marquee class="marq" bgcolor="transparent" direction="right" 
+        behavior="alternate" 
+        style="border:Brown 2px SOLID">
+        Journey Planner: Plan Your Journey In Minimal Time
+    </marquee>
+<div class="grid-container">
+  <div class="grid-item"><a target="_blank" href="paris.html">
+    <img src="./images/paris/paris1.jpg" alt="Cinque Terre" width="340px" height="160px">
+  </a>
+  <b><p style="font-size:20px;">Paris</p></b>
+</div>
+
+  <div class="grid-item"><a target="_blank" href="newyork.html">
+    <img src="./Images/newyork/nynew.jpg" alt="Forest" width="340px" height="160px">
+  </a><b><p style="font-size:20px;">New-York</p></b></div>
+
+  <div class="grid-item"><a target="_blank" href="losangles.html">
+    <img src="./Images/losangeles/la.jpg" alt="Losangles" width="340px" height="160px">
+  </a><b><p style="font-size:20px;">Los-Angeles</p></b></div>
+
+  <div class="grid-item"> <a target="_blank" href="mumbai.html">
+    <img src="./Images/mumbai/mumbai.jpg" alt="Northern Lights" width="340px" height="160px">
+  </a><b><p style="font-size:20px;">Mumbai</p></b></div>  
+
+  <div class="grid-item"><a target="_blank" href="dubai.html">
+    <img src="./Images/Dubai/dubai.jpg" alt="Dubai" width="340px" height="160px">
+  </a><b><p style="font-size:20px;">Dubai</p></b></div>
+
+  <div class="grid-item"> <a target="_blank" href="bangkok.html">
+    <img src="./Images/bangkok/bangkok.jpg" alt="Bangkok" width="340px" height="160px">
+  </a><b><p style="font-size:20px;">Bangkok</p></b></div> 
+  
+  <div class="grid-item"> <a target="_blank" href="hongkong.html">
+    <img src="./Images/hongkong/HongKong.jpg" alt="Hong-Kong" width="340px" height="160px">
+  </a><b><p style="font-size:20px;">Hong-Kong</p></b></div>
+
+  <div class="grid-item"><a target="_blank" href="lasvegas.html">
+    <img src="./Images/lasvegas/la7.jpg" alt="Las-Vegas" width="340px" height="160px">
+  </a><b><p style="font-size:20px;">Las-Vegas</p></b></div>  
+
+  <div class="grid-item"><a target="_blank" href="kathmandu.html">
+    <img src="./images/kathmandu/kathmandu.jpg" alt="Kathmandu" width="340px" height="160px">
+  </a><b><p style="font-size:20px;">Kathmandu</p></b></div>
+
+  <div class="grid-item"><a target="_blank" href="kolkata.html">
+    <img src="./images/kolkata/kolkata.jpg" alt="Kolkata" width="340px" height="160px">
+  </a><b><p style="font-size:20px;">Kolkata</p></b></div>  
+
+  <div class="grid-item"><a target="_blank" href="delhi.html">
+    <img src="./images/delhi/d.jpg" alt="Delhi" width="340px" height="160px">
+  </a><b><p style="font-size:20px;">Delhi</p></b></div>  
+
+  <div class="grid-item"><a target="_blank" href="jaipur.html">
+    <img src="./images/jaipur/j.jpg" alt="Jaipur" width="340px" height="160px">
+  </a><b><p style="font-size:20px;">Jaipur</p></b></div>  
+
+</div>
+
+</body>
+</html>
+
